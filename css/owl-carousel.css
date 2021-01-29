@@ -93,7 +93,20 @@
     direction: rtl; }
   .owl-carousel.owl-rtl .owl-item {
     float: right; }
-
+.owl-prev{
+  margin-left: -720px;
+  position: absolute;
+  margin-top: -420px;
+  font-size: 77px !important;
+  font-weight: 600;
+}
+.owl-next{
+  margin-left: 693px;
+  position: absolute;
+  margin-top: -420px;
+  font-size: 77px !important;
+  font-weight: 600;
+}
 /* No Js */
 .no-js .owl-carousel {
   display: block; }
