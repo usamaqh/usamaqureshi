@@ -398,10 +398,10 @@
         function setOpacity (){
             var x = document.getElementById("PNumber");
             if (x.style.visibility === "hidden") {
-                //console.log("make visible");
+                ////console.log("make visible");
                 x.style.visibility = "visible";
             } else {
-                //console.log("make hide");
+                ////console.log("make hide");
                 x.style.visibility = "hidden";
             }
         }
@@ -7545,42 +7545,42 @@ Compete with other players around the globe to achieve the highest score in the 
     var lengthThis = 0;
     var tab1;
 
-        //console.log("tab1 child count "+tab1.children.length);
+        ////console.log("tab1 child count "+tab1.children.length);
     for (var i = 0; i < tab1.children.length; i++) {
         var tableChild = tab1.children[i].id;
-        //console.log("tab "+ tableChild);
+        ////console.log("tab "+ tableChild);
         var items = document.getElementsByClassName("item"+i);
-        console.log(items);
+        //console.log(items);
         for(var j=0;j<items.length;j++){
             //if (items.length > 0){
                 //var img = items[0];
-                //console.log(img);
-                //console.log(img.childNodes[1]);
+                ////console.log(img);
+                ////console.log(img.childNodes[1]);
                 var img = items[j].childNodes[1];
                 img.onclick = function(){
-                    console.log("assinged");
+                    //console.log("assinged");
                     if (parentNode != null)
                     {
-                        //console.log("prev parent node "+parentNode);
+                        ////console.log("prev parent node "+parentNode);
                         document.getElementById("modal_tab1").style.display = "block";
 
                         for(var l=0;l<modal.childNodes[3].childNodes.length;l++){
-                            //console.log(modal.childNodes[3].childNodes[l]);
+                            ////console.log(modal.childNodes[3].childNodes[l]);
                             if (modal.childNodes[3].childNodes[l].id === parentNode){
-                               // console.log("found previous");
+                               // //console.log("found previous");
                                 modal.childNodes[3].childNodes[l].style.display = "none";
 
-                                //console.log("child: "+modal.childNodes[3].childNodes[l].childNodes[3]);
+                                ////console.log("child: "+modal.childNodes[3].childNodes[l].childNodes[3]);
                                 var coun = 1;
                                 for(var m=3;m<modal.childNodes[3].childNodes[l].childNodes.length;m++){
-                                    console.log("coun "+coun);
-                                    console.log("child: "+modal.childNodes[3].childNodes[l].childNodes[m].id);
+                                    //console.log("coun "+coun);
+                                    //console.log("child: "+modal.childNodes[3].childNodes[l].childNodes[m].id);
 
                                     if (modal.childNodes[3].childNodes[l].childNodes[m].id === "t"+coun){
-                                        console.log("foun child to deactive: "+modal.childNodes[3].childNodes[l].childNodes[m].id)
+                                        //console.log("foun child to deactive: "+modal.childNodes[3].childNodes[l].childNodes[m].id)
                                         //document.getElementById(modal.childNodes[3].childNodes[l].childNodes[m].id).style.display = "none";
                                         var duplicate = document.querySelectorAll("#"+modal.childNodes[3].childNodes[l].childNodes[m].id);
-                                        console.log(duplicate);
+                                        //console.log(duplicate);
                 
                                         for(var i=0;i<duplicate.length;i++){
                                             if (duplicate[i].parentNode.id == parentNode){
@@ -7608,34 +7608,34 @@ Compete with other players around the globe to achieve the highest score in the 
                         //modal.childNodes.item("#"+parentNode).style.display = "none";
                     }
 
-                    console.log("pressed "+this.parentNode.id);
+                    //console.log("pressed "+this.parentNode.id);
                     modal.style.display = "block";
                     modalImg.src = this.src;
-                    //console.log(modal.childNodes[3]);
-                    //console.log(modal.childNodes);
+                    ////console.log(modal.childNodes[3]);
+                    ////console.log(modal.childNodes);
                     
 
                     parentNode = this.parentNode.id;
 
                     for(var k=0;k<modal.childNodes[3].childNodes.length;k++){
                         if(modal.childNodes[3].childNodes[k].id === this.parentNode.id){
-                           // console.log("found child: "+modal.childNodes[3].childNodes[k].id);
+                           // //console.log("found child: "+modal.childNodes[3].childNodes[k].id);
                             modal.childNodes[3].childNodes[k].style.display = "block";
                             
-                            //console.log(modal.childNodes[3].childNodes[k]);
-                            //console.log(modal.childNodes[3].childNodes[k].childNodes.length);
+                            ////console.log(modal.childNodes[3].childNodes[k]);
+                            ////console.log(modal.childNodes[3].childNodes[k].childNodes.length);
 
                             if(modal.childNodes[3].childNodes[k].childNodes.length > 3)
                             {
-                                //console.log("open the traverse buttons");
+                                ////console.log("open the traverse buttons");
                                 
-                                //console.log(modal.childNodes[3].childNodes[k].childNodes.length);
+                                ////console.log(modal.childNodes[3].childNodes[k].childNodes.length);
                                 modal.childNodes[5].style.display = "block";
-                                //console.log(modal.childNodes[3].childNodes[k].childNodes);
+                                ////console.log(modal.childNodes[3].childNodes[k].childNodes);
                                 modal.childNodes[5].childNodes[0].id = modal.childNodes[3].childNodes[k].childNodes.length - 4;
-                                //console.log(modal.childNodes[3].childNodes[k].childNodes);
+                                ////console.log(modal.childNodes[3].childNodes[k].childNodes);
                                 AssignTravers(modal.childNodes[5].childNodes[0].id, modal.childNodes[3].childNodes[k].childNodes);
-                                //console.log(modal.childNodes[5].childNodes[0].id);
+                                ////console.log(modal.childNodes[5].childNodes[0].id);
                             }
                         }
                     }
@@ -7689,16 +7689,16 @@ Compete with other players around the globe to achieve the highest score in the 
                     obj1.id = "modal_tab1";
         listOfTabs.push(obj1);
 
-        console.log(tabVal);
+        //console.log(tabVal);
         for(var i=3;i<tabVal.length;i++){
             if (loopStartPoint<=lengthThis){
-                console.log(tabVal[i].parentNode.id);
+                //console.log(tabVal[i].parentNode.id);
                 if (tabVal[i].id === "t"+loopStartPoint){
-                    //console.log(tabVal[i].id);
+                    ////console.log(tabVal[i].id);
                     var obj = {};
                     obj.id = tabVal[i].id;
                     listOfTabs.push(obj);
-                    //console.log(listOfTabs);
+                    ////console.log(listOfTabs);
                     loopStartPoint++;
                 }
             }
@@ -7707,15 +7707,15 @@ Compete with other players around the globe to achieve the highest score in the 
         tab1 = document.getElementById("modal_tab1");
 
         btnLeft.onclick= function(){
-            console.log("currentpos: "+currentPos+" length: "+listOfTabs.length);
+            //console.log("currentpos: "+currentPos+" length: "+listOfTabs.length);
                     if (currentPos > 0)
                     {
-                        //console.log("left hua jee");
-                        //console.log(listOfTabs[currentPos-1]);
+                        ////console.log("left hua jee");
+                        ////console.log(listOfTabs[currentPos-1]);
                         var tab2;
                         if (currentPos!=1){
                             var duplicate = document.querySelectorAll("#"+listOfTabs[currentPos-1].id);
-                            console.log(duplicate);
+                            //console.log(duplicate);
     
                             for(var i=0;i<duplicate.length;i++){
                                 if (duplicate[i].parentNode.id == parentNode){
@@ -7729,12 +7729,12 @@ Compete with other players around the globe to achieve the highest score in the 
 
                         }
 
-                        console.log("left: "+tab2);
+                        //console.log("left: "+tab2);
                             tab1.style.display = "none";
                             tab2.style.display = "block";
                             currentPos--;
                             tab1 = tab2;
-                            console.log("after currentpos: "+currentPos+" length: "+listOfTabs.length);
+                            //console.log("after currentpos: "+currentPos+" length: "+listOfTabs.length);
                     }
 
                     try{
@@ -7756,13 +7756,13 @@ Compete with other players around the globe to achieve the highest score in the 
                 }
 
                 btnRight.onclick= function(){
-                    console.log("currentpos: "+currentPos+" length: "+listOfTabs.length);
+                    //console.log("currentpos: "+currentPos+" length: "+listOfTabs.length);
                     if (currentPos < listOfTabs.length - 1)
                     {
-                        //console.log("right hua jee");
-                        //console.log(listOfTabs[currentPos+1]);
+                        ////console.log("right hua jee");
+                        ////console.log(listOfTabs[currentPos+1]);
                         var duplicate = document.querySelectorAll("#"+listOfTabs[currentPos+1].id);
-                        console.log(duplicate);
+                        //console.log(duplicate);
                         var tab2;
 
                         for(var i=0;i<duplicate.length;i++){
@@ -7773,13 +7773,13 @@ Compete with other players around the globe to achieve the highest score in the 
                         }
 
                         //var tab2 = document.getElementById(listOfTabs[currentPos+1].id);
-                        console.log("right: "+tab2);
+                        //console.log("right: "+tab2);
                         tab1.style.display = "none";
                         tab2.style.display = "block";
                         currentPos++;
                         tab1 = tab2;
                         
-                        console.log("after currentpos: "+currentPos+" length: "+listOfTabs.length);
+                        //console.log("after currentpos: "+currentPos+" length: "+listOfTabs.length);
                     }
                     try{
                         var video = document.getElementById("video " + parentNode);
@@ -7802,10 +7802,10 @@ Compete with other players around the globe to achieve the highest score in the 
                 // btnLeftMain.onclick= function(){
                 //                 if (parentNode != 0)
                 //                 {
-                //                     //console.log("p:"+parentNode);
-                //                     //console.log("p:"+(parentNode-1));
+                //                     ////console.log("p:"+parentNode);
+                //                     ////console.log("p:"+(parentNode-1));
                 //                     var items = document.getElementsByClassName("item"+(parentNode-1));
-                //                     console.log("pspapsa: "+items);
+                //                     //console.log("pspapsa: "+items);
                 //                     var img = items[parentNode].childNodes[1];
                 //                     img.click();
                 //                 }
@@ -7821,7 +7821,7 @@ Compete with other players around the globe to achieve the highest score in the 
         // if (currentPos > 0)
         // {
         //     var tab2 = document.getElementById(listOfTabs[currentPos-1].id);
-        //     console.log("left: "+tab2);
+        //     //console.log("left: "+tab2);
         //     btnLeft.onclick = function(){
         //         tab1.style.display = "none";
         //         tab2.style.display = "block";
@@ -7831,10 +7831,10 @@ Compete with other players around the globe to achieve the highest score in the 
         // else 
         // if (currentPos < listOfTabs.length)
         // {
-        //     //console.log(listOfTabs);
-        //     //console.log(listOfTabs[currentPos+1].id);
+        //     ////console.log(listOfTabs);
+        //     ////console.log(listOfTabs[currentPos+1].id);
         //     var tab2 = document.getElementById(listOfTabs[currentPos+1].id);
-        //     console.log("right: "+tab2);
+        //     //console.log("right: "+tab2);
         //     btnRight.onclick = function(){
         //         tab1.style.display = "none";
         //         tab2.style.display = "block";
