@@ -66,9 +66,9 @@
 .modal-dialog{
     overflow-y: initial !important
 }
-.modal-body{
-    height: 80vh;
-    overflow-y: auto;
+.modal {
+    max-height: 100%;
+    overflow-y: scroll !important;
 }
 
 /* Caption of Modal Image */
@@ -120,72 +120,39 @@
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 1300px){
-    .logo{
-    height: 200px !important;
-}
 
-.page-content{
-    margin-top: -20% !important;
-}
 
-#designationID{
-    position: initial !important;
-}
-
-#motto{
-    margin-left: 70% !important;
-}
-
-#mineText{
-    right: -145px !important;
-}
-
-#mineHeading{
-    right: -20px !important;
-}
-
-#mineCenter{
-    right: 50px !important;
-}
-
-#skillColumn{
-    display: inline-grid !important;
-    margin-left: -25% !important;
-}
-
-#columnSkill{
-    margin-bottom: 10px !important;
-}
-
-#video{
-    width: -webkit-fill-available !important;
-}
-
-#AwardsID{
-    margin-left: -529px !important;
-}
-
-#PNumberTwo{
-    padding-left: 750px !important;
-}
-
-#PNumber{
-    padding-left: 70% !important;
-    padding-top: 583px !important;
-}
-
-.modal-content{
-    margin-top: 8% !important;
-    width: 48% !important;
-}
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 600px){
+    #backGroundModal{
+        height: 150% !important;
+    }
+    #PNumberTwo{
+        width: max-content;
+    padding-left: 440px !important;
+    padding-top: 100px !important;
+    }
   .modal-content {
-    width: 100%;
+    width: 60% !important;
+    left: auto;
+  }
+
+  #modalHeadingSpan{
+    width: 100% !important;
+    left: 0 !important;
+    top: 46% !important;
+  }
+
+  #modalHeadingSpan2{
+    width: 100% !important;
+    left: 0 !important;
+    top: 50% !important;
+  }
+
+  #modalHeadingSpan3{
+    width: 70% !important;
+    left: 130px !important;
+    top: 57% !important;
+    font-size: 15px !important;
   }
 
   .Modern-Slider{
@@ -193,11 +160,12 @@
 }
 
 #nav_Mobile{
-    width: 73%;
+    width: 100%;
 }
 
 #top{
-    left: 55% !important;
+    left: 59% !important;
+    padding-top: 12% !important;
     }
 
     #motto{
@@ -206,20 +174,21 @@
     }
 
     #mineImg{
-        margin-left: 130% !important;
+        margin-left: 150% !important;
         width: 70% !important;
     }
 
     #mineHeading{
-        right: -29% !important;
+        right: -37% !important;
     }
 
     #mineText{
-        right: -15% !important;
+        right: -25% !important;
     }
 
     #skillColumn{
         display: inline-grid !important;
+        margin-left: 20% !important;
     }
 
     #columnSkill{
@@ -228,13 +197,328 @@
 
 
 #AwardsID{
-    margin-left: -262px !important;
+    margin-left: -189px !important;
 }
 
 #video{
     margin-left: 5% !important;
+    left: 56% !important;
+}
+
+#blog{
+    left: 60% !important;
+}
+
+#myModal{
+    width: 100% !important;
+    height: 100%;
+}
+
+.tabsULL{
+    display: block !important;
+}
+
+.item0{
+    width: 100% !important;
+}
+
+.item1{
+    width: 100% !important;
+}
+#modal_page_left{
+    top: 42% !important;
+    right: 55% !important;
+}
+
+#modal_page_Right{
+    top: 42% !important;
+    right: 42% !important;
+}
+} */
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 992px){
+.sidebar-navigation nav{
+    top: 40% !important;
+}
+    .logo{
+    height: 200px !important;
+}
+    #backGroundModal{
+        height: 150% !important;
+    }
+    #PNumberTwo{
+        width: max-content;
+    padding-left: 440px !important;
+    padding-top: 100px !important;
+    }
+  .modal-content {
+    width: 60% !important;
+    left: auto;
+  }
+
+  #modalHeadingSpan{
+    width: 100% !important;
+    left: 0 !important;
+    top: 56% !important;
+  }
+
+  #modalHeadingSpan2{
+    width: 100% !important;
+    left: 0 !important;
+    top: 60% !important;
+  }
+
+  #modalHeadingSpan3{
+    width: 70% !important;
+    left: 130px !important;
+    top: 67% !important;
+    font-size: 15px !important;
+  }
+
+  .Modern-Slider{
+    margin-bottom: -83%;
+}
+
+#nav_Mobile{
+    width: 100%;
+}
+
+#top{
+    left: 59% !important;
+    padding-top: 12% !important;
+    padding-bottom: 130% !important;
+    }
+
+    #motto{
+        margin-top: -47px !important;
+        margin-left: 7px !important;
+    }
+
+    #mineImg{
+        margin-left: 140% !important;
+        /* width: 70% !important; */
+        right: -38% !important;
+        /* top: 468px !important; */
+        position: inherit;
+        width: 100% !important;
+    }
+
+    #mineHeading{
+        /* top: 476px !important; */
+        right: -50% !important;
+        position: inherit;
+        width: 100% !important;
+    }
+
+    #mineText{
+        right: -38% !important;
+        /* top: 468px !important; */
+        position: inherit;
+        width: 100% !important;
+    }
+
+    #mineCenter{
+        right: -38% !important;
+        top: 100px !important;
+        position: inherit;
+        width: 100% !important;
+    }
+
+    #featured{
+        /* padding-bottom: 80% !important; */
+    }
+
+    #skillColumn{
+        display: inline-grid !important;
+        margin-left: -10% !important;
+    }
+
+    #columnSkill{
+        margin-bottom: 10px !important;
+    }
+
+    #PNumber{
+        padding-top: 713px !important;
+    }
+
+
+#AwardsID{
+    margin-left: -189px !important;
+}
+
+#video{
+    margin-left: 5% !important;
+    left: 56% !important;
+}
+
+#blog{
+    left: 60% !important;
+}
+
+#myModal{
+    width: 97% !important;
+    height: 100%;
+}
+
+.tabsULL{
+    display: block !important;
+}
+
+.item0{
+    width: 100% !important;
+}
+
+.item1{
+    width: 100% !important;
+}
+#modal_page_left{
+    top: 50% !important;
+    right: 55% !important;
+}
+
+#modal_page_Right{
+    top: 50% !important;
+    right: 42% !important;
 }
 }
+
+/* 100% Image Width on Smaller Screens
+@media only screen and (min-width: 1200px){
+/* .sidebar-navigation nav{
+    top: 40% !important;
+}
+    .logo{
+    height: 200px !important;
+}
+    #backGroundModal{
+        height: 150% !important;
+    }
+    #PNumberTwo{
+        width: max-content;
+    padding-left: 440px !important;
+    padding-top: 100px !important;
+    }
+  .modal-content {
+    width: 60% !important;
+    left: auto;
+  }
+
+  #modalHeadingSpan{
+    width: 100% !important;
+    left: 0 !important;
+    top: 56% !important;
+  }
+
+  #modalHeadingSpan2{
+    width: 100% !important;
+    left: 0 !important;
+    top: 60% !important;
+  }
+
+  #modalHeadingSpan3{
+    width: 70% !important;
+    left: 130px !important;
+    top: 67% !important;
+    font-size: 15px !important;
+  }
+
+  .Modern-Slider{
+    margin-bottom: -83%;
+}
+
+#nav_Mobile{
+    width: 100%;
+}
+
+#top{
+    left: 59% !important;
+    padding-top: 12% !important;
+    padding-bottom: 130% !important;
+    }
+
+    #motto{
+        margin-top: -47px !important;
+        margin-left: 7px !important;
+    }
+
+    #mineImg{
+        margin-left: 182% !important;
+        width: 70% !important;
+    }
+
+    #mineHeading{
+        top: 476px !important;
+        right: -32% !important;
+    }
+
+    #mineText{
+        right: -65% !important;
+        top: 468px !important;
+    }
+
+    #mineCenter{
+        top: 924px !important;
+    right: 19px !important;
+    }
+
+    #featured{
+        padding-bottom: 80% !important;
+    }
+
+    #skillColumn{
+        display: inline-grid !important;
+        margin-left: -10% !important;
+    }
+
+    #columnSkill{
+        margin-bottom: 10px !important;
+    }
+
+    #PNumber{
+        padding-top: 713px !important;
+    }
+
+
+#AwardsID{
+    margin-left: -189px !important;
+}
+
+#video{
+    margin-left: 5% !important;
+    left: 56% !important;
+}
+
+#blog{
+    left: 60% !important;
+}
+
+#myModal{
+    width: 97% !important;
+    height: 100%;
+}
+
+.tabsULL{
+    display: block !important;
+}
+
+.item0{
+    width: 100% !important;
+}
+
+.item1{
+    width: 100% !important;
+}
+#modal_page_left{
+    top: 50% !important;
+    right: 55% !important;
+}
+
+#modal_page_Right{
+    top: 50% !important;
+    right: 42% !important;
+} */
+} */
     </style>
     
     <head>
@@ -271,7 +555,7 @@
             </button>
             <!--/.navbar-header-->
             <div id="main-nav" class="collapse navbar-collapse">
-                <nav>
+                <nav id="navlists">
                     <ul class="nav navbar-nav">
                         <li><a href="#top">Home</a></li>
                         <li><a href="#featured">About Me</a></li>
@@ -620,7 +904,7 @@
                             <section id="first-tab-group" class="tabgroup">
                                 <div id="tab1" style="display: inline-flex;">
                                     <ul id="tab1UL">
-                                        <li id="tab1UL_1" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab1UL_1" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -650,7 +934,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab1UL_2"  style="display: inline-flex;
+                                        <li class="tabsULL" id="tab1UL_2"  style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -680,7 +964,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab1UL_3" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab1UL_3" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -711,7 +995,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab1UL_4" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab1UL_4" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -750,7 +1034,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab1UL_5" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab1UL_5" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -785,7 +1069,7 @@
                                 </div>
                                 <div id="tab2" style="display: inline-flex;">
                                     <ul id="tab2UL">
-                                        <li id="tab2UL_1" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab2UL_1" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -815,7 +1099,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab2UL_2"  style="display: inline-flex;
+                                        <li class="tabsULL" id="tab2UL_2"  style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -845,7 +1129,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab2UL_3" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab2UL_3" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -864,7 +1148,7 @@
                                 </div>
                                 <div id="tab3">
                                     <ul id="tab3UL">
-                                        <li id="tab3UL_1" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab3UL_1" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -894,7 +1178,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab3UL_2"  style="display: inline-flex;
+                                        <li class="tabsULL" id="tab3UL_2"  style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -924,7 +1208,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab3UL_3" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab3UL_3" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -955,7 +1239,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab3UL_4" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab3UL_4" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -986,7 +1270,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab3UL_5" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab3UL_5" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1017,7 +1301,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab3UL_6" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab3UL_6" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1048,7 +1332,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab3UL_7" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab3UL_7" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1079,7 +1363,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab3UL_8" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab3UL_8" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1099,7 +1383,7 @@
                                 </div>
                                 <div id="tab4">
                                     <ul id="tab4UL">
-                                        <li id="tab4UL_1" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab4UL_1" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1129,7 +1413,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab4UL_2"  style="display: inline-flex;
+                                        <li class="tabsULL" id="tab4UL_2"  style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1159,7 +1443,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab4UL_3" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab4UL_3" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1190,7 +1474,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab4UL_4" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab4UL_4" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1221,7 +1505,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab4UL_5" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab4UL_5" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1252,7 +1536,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab4UL_6" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab4UL_6" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1283,7 +1567,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab4UL_7" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab4UL_7" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1314,7 +1598,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="tab4UL_8" style="display: inline-flex;
+                                        <li class="tabsULL" id="tab4UL_8" style="display: inline-flex;
                                         max-width: 100%;
                                         padding-bottom: 0px;
                                         margin: 0;
@@ -1501,7 +1785,7 @@
     <span id="" class="close">&times;</span>
     
     <div id="">
-        <div id="" style="
+        <div id="backGroundModal" style="
         background: ghostwhite;
         width: 90%;
         height: 91%;
@@ -1523,7 +1807,7 @@
         </div>
         <div id="0" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -1537,7 +1821,7 @@
                                 text-align-last: center;
                             ">Realme Mobile AR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1550,7 +1834,7 @@
                         font-weight: bolder;
                         text-align-last: center;
                     ">(AR Product Showcase)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -1563,7 +1847,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1599,7 +1883,7 @@
         </div>
         <div id="1" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -1612,7 +1896,7 @@
                                 font-weight: bolder;
                                 text-align-last: center;
                             ">KIA Sportage AR
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -1625,7 +1909,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1639,7 +1923,7 @@
                         text-align-last: center;
                     ">(AR Car Model Showcase)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1675,7 +1959,7 @@
         </div>
         <div id="2" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -1689,7 +1973,7 @@
                                 text-align-last: center;
                             ">Appliances AR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1702,7 +1986,7 @@
                         font-weight: bolder;
                         text-align-last: center;
                     ">(AR Appliance Showcase)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -1715,7 +1999,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1747,7 +2031,7 @@
         </div>
         <div id="3" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -1761,7 +2045,7 @@
                                 text-align-last: center;
                             ">Mayfair AR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1774,7 +2058,7 @@
                         font-weight: bolder;
                         text-align-last: center;
                     ">(AR Mobile Experience)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -1787,7 +2071,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1831,7 +2115,7 @@
         </div>
         <div id="4" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -1845,7 +2129,7 @@
                                 text-align-last: center;
                             ">House Showcase VR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1858,7 +2142,7 @@
                         font-weight: bolder;
                         text-align-last: center;
                     ">(Oculus VR Experience)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -1871,7 +2155,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1907,7 +2191,7 @@
         </div>
         <div id="5" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -1921,7 +2205,7 @@
                                 text-align-last: center;
                             ">Virtual Event Platform
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1934,7 +2218,7 @@
                         font-weight: bolder;
                         text-align-last: center;
                     ">(Immersive Social Experience)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -1947,7 +2231,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Professional Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1971,7 +2255,7 @@
         </div>
         <div id="6" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -1985,7 +2269,7 @@
                                 text-align-last: center;
                             ">Predictive Maintenance
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -1998,7 +2282,7 @@
                         font-weight: bolder;
                         text-align-last: center;
                     ">(AR/VR Machine Maintenance Prediction)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2011,7 +2295,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Professional Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2035,7 +2319,7 @@
         </div>
         <div id="7" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2049,7 +2333,7 @@
                                 text-align-last: center;
                             ">Product Showcasing AR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2062,7 +2346,7 @@
                         font-weight: bolder;
                         text-align-last: center;
                     ">(AR Realtime Product Showcase)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2075,7 +2359,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2111,7 +2395,7 @@
         </div>
         <div id="8" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2125,7 +2409,7 @@
                                 text-align-last: center;
                             ">Visiting Card AR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2139,7 +2423,7 @@
                         text-align-last: center;
                     ">(AR Biodata)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2152,7 +2436,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2186,7 +2470,7 @@
         </div>
         <div id="9" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2200,7 +2484,7 @@
                                 text-align-last: center;
                             ">Speech Recognition AR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2214,7 +2498,7 @@
                         text-align-last: center;
                     ">(AR Voice Command Control)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2227,7 +2511,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2266,7 +2550,7 @@
         </div>
         <div id="10" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2280,7 +2564,7 @@
                                 text-align-last: center;
                             ">Saif-Ul-Malook AR Story
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2294,7 +2578,7 @@
                         text-align-last: center;
                     ">(AR Story)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2307,7 +2591,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2341,7 +2625,7 @@
         </div>
         <div id="11" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2355,7 +2639,7 @@
                                 text-align-last: center;
                             ">AR Baggage Management
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2369,7 +2653,7 @@
                         text-align-last: center;
                     ">(AR Measurement)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2382,7 +2666,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Professional Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2409,7 +2693,7 @@
         </div>
         <div id="12" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2423,7 +2707,7 @@
                                 text-align-last: center;
                             ">Rolls Royce AR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2437,7 +2721,7 @@
                         text-align-last: center;
                     ">(AR Card Model Showcase)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2450,7 +2734,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2483,7 +2767,7 @@
         </div>
         <div id="13" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2497,7 +2781,7 @@
                                 text-align-last: center;
                             ">AR Portal Window
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2511,7 +2795,7 @@
                         text-align-last: center;
                     ">(AR Portal)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2524,7 +2808,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2556,7 +2840,7 @@
         </div>
         <div id="14" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2570,7 +2854,7 @@
                                 text-align-last: center;
                             ">Property Showcase AR
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2584,7 +2868,7 @@
                         text-align-last: center;
                     ">(AR Construction Model)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2597,7 +2881,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2637,7 +2921,7 @@
         <!--Games-->
         <div id="15" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2651,7 +2935,7 @@
                                 text-align-last: center;
                             ">Devil's Whisper
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2665,7 +2949,7 @@
                         text-align-last: center;
                     ">(Horror Survival VR Game)
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2678,7 +2962,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2729,7 +3013,7 @@
         </div>
         <div id="16" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2743,7 +3027,7 @@
                                 text-align-last: center;
                             ">HQ Animated Dragon
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2756,7 +3040,7 @@
                         font-weight: bolder;
                         text-align-last: center;
                     ">(Custom Controller)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2769,7 +3053,7 @@
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2806,7 +3090,7 @@ Idea to construct such design, to animate it and then control it with custom cod
         </div>
         <div id="17" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2820,7 +3104,7 @@ Idea to construct such design, to animate it and then control it with custom cod
                                 text-align-last: center;
                             ">Voting Simulator
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2833,7 +3117,7 @@ Idea to construct such design, to animate it and then control it with custom cod
                         font-weight: bolder;
                         text-align-last: center;
                     ">(Android Game)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2847,7 +3131,7 @@ Idea to construct such design, to animate it and then control it with custom cod
                 text-align-last: center;
             "><br>[Professional Project]<a style="padding: 3%;
                     font-size: 20px;" href="https://play.google.com/store/apps/details?id=com.WarBoyZ.VotingSim" target="_blank">View on Play Store</a></span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2887,7 +3171,7 @@ Idea to construct such design, to animate it and then control it with custom cod
         </div>
         <div id="18" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2901,7 +3185,7 @@ Idea to construct such design, to animate it and then control it with custom cod
                                 text-align-last: center;
                             ">The Sharif Bros
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2914,7 +3198,7 @@ Idea to construct such design, to animate it and then control it with custom cod
                         font-weight: bolder;
                         text-align-last: center;
                     ">(Android Game)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -2928,7 +3212,7 @@ Idea to construct such design, to animate it and then control it with custom cod
                 text-align-last: center;
             "><br>[Professional Project]<a style="padding: 3%;
                     font-size: 20px;" href="https://play.google.com/store/apps/details?id=com.Warboyz.SharifBros" target="_blank">View on Play Store</a></span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -2976,7 +3260,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="19" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -2990,7 +3274,7 @@ Compete with other players around the globe to achieve the highest score in the 
                                 text-align-last: center;
                             ">Ghost Work
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3003,7 +3287,7 @@ Compete with other players around the globe to achieve the highest score in the 
                         font-weight: bolder;
                         text-align-last: center;
                     ">(Android Game)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3016,7 +3300,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3062,7 +3346,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="20" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3076,7 +3360,7 @@ Compete with other players around the globe to achieve the highest score in the 
                                 text-align-last: center;
                             ">Angry SSUET
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3089,7 +3373,7 @@ Compete with other players around the globe to achieve the highest score in the 
                         font-weight: bolder;
                         text-align-last: center;
                     ">(Game)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3102,7 +3386,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3133,7 +3417,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="21" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3147,7 +3431,7 @@ Compete with other players around the globe to achieve the highest score in the 
                                 text-align-last: center;
                             ">Guess The Alphabet
                 </span>
-                <span style="
+                <span id="modalHeadingSpan2" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3160,7 +3444,7 @@ Compete with other players around the globe to achieve the highest score in the 
                         font-weight: bolder;
                         text-align-last: center;
                     ">(Game)
-                </span><span style="
+                </span><span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3173,7 +3457,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3204,7 +3488,7 @@ Compete with other players around the globe to achieve the highest score in the 
         <!--3D Modeling-->
         <div id="22" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3219,7 +3503,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Animated Dragon
                 </span>
                 
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3232,7 +3516,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3284,7 +3568,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="23" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3299,7 +3583,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Realme Mobile
                 </span>
                 
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3312,7 +3596,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3361,7 +3645,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="24" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3376,7 +3660,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">KIA Sportage
                 </span>
                 
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3389,7 +3673,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3451,7 +3735,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="25" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3466,7 +3750,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Charizard
                 </span>
                 
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3479,7 +3763,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3515,7 +3799,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="26" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3530,7 +3814,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Devil’s Whisper 3D
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3543,7 +3827,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3617,7 +3901,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="27" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3632,7 +3916,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Brachiosaurus
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3645,7 +3929,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3698,7 +3982,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="28" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3713,7 +3997,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Lopsided Monster
                 </span>
                 
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3726,7 +4010,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3768,7 +4052,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="29" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3783,7 +4067,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Industrial Landscape
                 </span>
                 
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3796,7 +4080,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3841,7 +4125,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="30" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3856,7 +4140,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Showcase Dragon
                 </span>
              
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3869,7 +4153,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3915,7 +4199,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="31" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -3930,7 +4214,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Fall Boys Map
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -3943,7 +4227,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -3985,7 +4269,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="32" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4000,7 +4284,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Carrom
                 </span>
                 
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4013,7 +4297,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4049,7 +4333,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="33" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4064,7 +4348,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Ivan
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4077,7 +4361,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4114,7 +4398,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="34" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4129,7 +4413,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">3D House
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4142,7 +4426,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4182,7 +4466,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="35" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4197,7 +4481,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Pikachu
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4210,7 +4494,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4245,7 +4529,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="36" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4260,7 +4544,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Clothing
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4273,7 +4557,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4319,7 +4603,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="37" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4334,7 +4618,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Bed
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4347,7 +4631,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4386,7 +4670,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="38" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4401,7 +4685,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Floor Layout Plan
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4414,7 +4698,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4449,7 +4733,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="39" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4464,7 +4748,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Tile Materials
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4477,7 +4761,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4512,7 +4796,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="40" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4527,7 +4811,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Orc Helmet
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4540,7 +4824,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4574,7 +4858,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="41" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4589,7 +4873,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Orc Shield
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4602,7 +4886,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4637,7 +4921,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="42" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4652,7 +4936,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Sword
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4665,7 +4949,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4700,7 +4984,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="43" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4715,7 +4999,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">3D Animated Promo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4728,7 +5012,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4766,7 +5050,7 @@ Compete with other players around the globe to achieve the highest score in the 
         <!--Graphic design-->
         <div id="44" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4781,7 +5065,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Force Clothing Promo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4794,7 +5078,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4823,7 +5107,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="45" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4838,7 +5122,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Defence Day Promo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4851,7 +5135,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4882,7 +5166,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="46" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4897,7 +5181,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Pakistan Furnitures Promo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4910,7 +5194,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -4949,7 +5233,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="47" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -4964,7 +5248,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Ticktock Dhaba Promo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -4977,7 +5261,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5007,7 +5291,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="48" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5022,7 +5306,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">CPEC Event
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5035,7 +5319,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5076,7 +5360,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="49" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5091,7 +5375,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">LSP Information Video
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5104,7 +5388,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5138,7 +5422,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="50" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5153,7 +5437,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Digital Chair Scene
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5166,7 +5450,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5191,7 +5475,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="51" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5206,7 +5490,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Tour Video
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5219,7 +5503,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5251,7 +5535,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="52" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5266,7 +5550,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Image Re-color
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5279,7 +5563,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5304,7 +5588,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="53" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5319,7 +5603,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">VMS Branding
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5332,7 +5616,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5361,7 +5645,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="54" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5376,7 +5660,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Eid Mascot Video
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5389,7 +5673,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Professional Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5419,7 +5703,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="55" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5434,7 +5718,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Valor Invicta Logo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5447,7 +5731,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5476,7 +5760,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="56" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5491,7 +5775,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">VividArt Logo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5504,7 +5788,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5530,7 +5814,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="57" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5545,7 +5829,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">AMDC Branding
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5558,7 +5842,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5593,7 +5877,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="58" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5608,7 +5892,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Arena Multimedia Branding
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5621,7 +5905,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5674,7 +5958,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="59" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5689,7 +5973,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">QVC Branding
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5702,7 +5986,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5734,7 +6018,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="60" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5749,7 +6033,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Typography Video
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5762,7 +6046,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5791,7 +6075,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="61" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5806,7 +6090,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Showbox Branding
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5819,7 +6103,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5847,7 +6131,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="62" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5862,7 +6146,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Digital Munich Logo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5875,7 +6159,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Professional Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5904,7 +6188,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="63" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5919,7 +6203,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Database UI
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5932,7 +6216,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -5965,7 +6249,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="64" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -5980,7 +6264,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">SSUET Logo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -5993,7 +6277,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Personal Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -6025,7 +6309,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="65" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -6040,7 +6324,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Freight Tech Branding
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -6053,7 +6337,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -6109,7 +6393,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="66" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -6124,7 +6408,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Shair Logo
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -6137,7 +6421,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
@@ -6172,7 +6456,7 @@ Compete with other players around the globe to achieve the highest score in the 
         </div>
         <div id="67" style="display: none;">
             <div id="">
-                <span style="
+                <span id="modalHeadingSpan" style="
                                 font-family: -webkit-pictograph;
                                 position: absolute;
                                 /* padding-left: 1077px; */
@@ -6187,7 +6471,7 @@ Compete with other players around the globe to achieve the highest score in the 
                             ">Al-Makkah Visiting Card
                 </span>
                
-                <span style="
+                <span id="modalHeadingSpan2" style="
                 font-family: -webkit-pictograph;
                 position: absolute;
                 /* padding-left: 1077px; */
@@ -6200,7 +6484,7 @@ Compete with other players around the globe to achieve the highest score in the 
                 font-weight: bolder;
                 text-align-last: center;
             "><br>[Customer Project]</span>
-                <span style="
+                <span id="modalHeadingSpan3" style="
                         font-family: -webkit-pictograph;
                         position: absolute;
                         /* padding-left: 1077px; */
