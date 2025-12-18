@@ -12,7 +12,7 @@ body {
 
 p {
   font-size: 13px;
-  color: #7a7a7a;
+  color: black;
   line-height: 24px;
 }
 
@@ -54,7 +54,7 @@ p {
 .section-heading em {
   font-style: normal;
   font-weight: 700;
-  color: #45489a;
+  color: #7a19f7;
 }
 
 .section-heading p {
@@ -69,7 +69,7 @@ p {
 .white-button a {
   font-size: 13px;
   font-weight: 600;
-  color: #45489a;
+  color: #7a19f7;
   text-transform: capitalize;
   background-color: #fff;
   display: inline-block;
@@ -82,7 +82,7 @@ p {
 }
 
 .white-button a:hover {
-  background-color: #45489a;
+  background-color: #7a19f7;
   color: #fff;
 }
 
@@ -91,7 +91,7 @@ p {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  background-color: #45489a;
+  background-color: #7a19f7;
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -99,11 +99,13 @@ p {
   letter-spacing: 0.25px;
   text-decoration: none;
   transition: all 0.3s;
+  border-radius:100px;
+  width:70%;
 }
 
 .accent-button a:hover {
   background-color: #fff;
-  color: #45489a;
+  color: #7a19f7;
 }
 
 header {
@@ -191,7 +193,7 @@ header {
   width: 100%;
   height: 200px;
   line-height: 100px;
-  background-color: #45489a;
+  background-color: #7a19f7;
   padding: 20px;
   text-align: center;
 }
@@ -309,7 +311,7 @@ header {
 }
 
 .sidebar-navigation .social-icons li a:hover {
-  color: #45489a;
+  color: #7a19f7;
 }
 
 
@@ -458,10 +460,11 @@ header {
 /* Featured Style */
 
 #featured {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 80px;
-  border-bottom: 1px solid #eee;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #eee;
+    background-color: #f4f4f4;
 }
 
 #featured .section-heading {
@@ -487,7 +490,7 @@ header {
 }
 
 #featured .owl-dots .active span {
-  background-color: #45489a!important;
+  background-color: #7a19f7!important;
 }
 
 #featured .owl-dots button {
@@ -523,7 +526,7 @@ header {
 }
 
 #featured .owl-nav span:hover {
-  background-color: #45489a;
+  background-color: #7a19f7;
   color: #fff;
 }
 
@@ -572,34 +575,40 @@ header {
   background-color: #fff;
   position: relative;
   z-index: 10;
+  height:300px;
 }
 
-#featured .item .text-content h4 {
-  margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 21px;
-  font-weight: 600;
-  color: #232323;
-  letter-spacing: 0.5px;
-}
+    #featured .item .text-content h4 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 21px;
+        font-weight: 600;
+        color: #232323;
+        letter-spacing: 0.5px;
+        padding-left:15px;
+        padding-right:15px;
+    }
 
-#featured .item .text-content span {
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  color: #7a7a7a;
-  letter-spacing: 0.5px;
-  margin-bottom: 12.5px;
-}
+    #featured .item .text-content span {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        color: #7a7a7a;
+        letter-spacing: 0.5px;
+        margin-bottom: 12.5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 
 
 /* Projects Style */
 
 #projects {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    background-color: #f4f4f4;
 }
 
 #projects .masonry {
@@ -624,7 +633,6 @@ header {
 
 #video {
   text-align: center;
-  background-color: #f4f4f4;
   padding: 100px 60px;
 }
 
@@ -737,13 +745,13 @@ header {
   height: 90px;
   width: 100%;
   background-color: #eee;
-  border-bottom: 10px solid #45489a;
+  border-bottom: 10px solid #7a19f7;
 }
 
 #blog .tabs li {
   display: inline-block;
   text-align: center;
-  width: 25%;
+  width: 20%;
   float: left;
   margin: 0;
   padding: 0;
@@ -763,7 +771,7 @@ header {
 }
 
 #blog .tabs a:hover {
-  color: #45489a;
+  color: #7a19f7;
 }
 
 
@@ -772,7 +780,7 @@ header {
 }
 
 #blog .tabs .active {
-  background-color: #45489a;
+  background-color: #7a19f7;
   color: #fff;
 }
 
@@ -891,7 +899,7 @@ header {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  background-color: #45489a;
+  background-color: #7a19f7;
   display: inline-block;
   height: 44px;
   line-height: 24px;
@@ -1072,6 +1080,7 @@ header {
 
   #blog .tabs a {
     font-size: 13px;
+    line-height:41px;
   }
 
   #blog .tabgroup ul li img {
@@ -1096,4 +1105,10 @@ header {
 @media (max-width: 500px) {
 
 
+}
+
+@media (max-width: 767px) {
+    .page-content {
+        padding-top: 0;
+    }
 }
