@@ -32,7 +32,7 @@
 
 
     <div id="top">
-        <video id="myVideo" muted loop preload="none" poster="img/postervideo.jpg" style="
+        <video id="myVideo" muted autoplay loop preload="metadata" poster="img/postervideo.jpg" style="
         height: 100%;
         /* width: 100%; */
         background: black;
@@ -45,9 +45,9 @@
             <source src="video/ProjectReel.mp4" type="video/mp4">
         </video>
 
-        <div id="playPauseBtn">
+        <!--<div id="playPauseBtn">
             ▶
-        </div>
+        </div>-->
 
     </div>
 
@@ -17239,7 +17239,7 @@
         }
     </script>
 
-    <script>
+    <!--<script>
         const video = document.getElementById("myVideo");
         const btn = document.getElementById("playPauseBtn");
         const source = video.querySelector("source");
@@ -17260,7 +17260,7 @@
                 btn.textContent = "▶";
             }
         });
-    </script>
+    </script>-->
 
     <!--<script>
         {
