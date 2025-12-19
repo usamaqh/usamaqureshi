@@ -323,6 +323,17 @@ span.circle100:after {
         opacity: 1;
     }
 
+.project-video {
+    margin-left: 130px; /* PC / laptop */
+}
+
+@media (max-width: 768px) {
+    .project-video {
+        margin-left: 60px; /* mobile */
+    }
+}
+
+
 @media (max-width: 768px) {
     #myVideo {
         position: relative;
