@@ -34,22 +34,22 @@
 
 
     <div id="top">
-        <!--<video id="myVideo" muted loop preload="metadata" poster="img/DevilWhisper_2.jpg" style="
+        <video id="myVideo" muted loop preload="metadata" poster="img/postervideo.jpg" style="
         height: 100%;
         /* width: 100%; */
         background: black;
-    ">-->
-        <video id="myVideo" muted loop preload="metadata" autoplay style="
+    ">
+        <!--<video id="myVideo" muted loop preload="metadata" autoplay style="
     height: 100%;
     /* width: 100%; */
     background: black;
-">
+">-->
             <source src="video/ProjectReel.mp4" type="video/mp4">
         </video>
 
-        <!--<div id="playPauseBtn">
+        <div id="playPauseBtn">
             ▶
-        </div>-->
+        </div>
 
     </div>
 
@@ -162,7 +162,7 @@
     </div>-->
 
     <div class="page-content">
-        <section id="video" class="content-section fade-section" style="margin-top: 100px;">
+        <section id="video" class="content-section" style="margin-top: 100px;">
             <div class="section-heading">
                 <h1 style="text-align: left;">About<em>&nbsp;Me</em></h1>
             </div>
@@ -193,7 +193,7 @@
             </div>
         </section>
 
-        <section id="projects" class="content-section fade-section">
+        <section id="projects" class="content-section">
             <div class="section-heading">
                 <h1>My<em>&nbsp;Skills</em></h1>
             </div>
@@ -373,7 +373,7 @@
         </section>
 
 
-        <section id="blog" class="content-section fade-section">
+        <section id="blog" class="content-section">
             <div class="section-heading">
                 <h1>My<em>&nbsp;Projects</em></h1>
             </div>
@@ -1629,7 +1629,7 @@
 
 
 
-        <section id="featured" class="content-section fade-section">
+        <section id="featured" class="content-section">
             <div class="section-heading">
                 <h1>Awards &<br><em>Achievements</em></h1>
             </div>
@@ -1799,7 +1799,7 @@
         </section>
 
 
-        <section id="contact" class="content-section fade-section">
+        <section id="contact" class="content-section">
             <div id="contact-content">
                 <div class="section-heading">
                     <h1><em>Contact</em><br>Feel free to reach out!</h1>
@@ -17434,7 +17434,7 @@
         // When switching tabs, auto-select "All" filter radio
         document.querySelectorAll('.tabs a').forEach(tab => {
             tab.addEventListener('click', function () {
-                // get target tab id (#tab1, #tab2, etc.)
+                // get target tab id (#tab1#tab1, #tab2, etc.)
                 const target = this.getAttribute('href');
 
                 // find "All" radio inside that tab
