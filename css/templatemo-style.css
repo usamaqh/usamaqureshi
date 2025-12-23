@@ -1112,3 +1112,29 @@ header {
         padding-top: 0;
     }
 }
+
+/* ================================
+   MOBILE STICKY PROJECT TABS FIX
+   ================================ */
+@media (max-width: 767px) {
+
+    #blog .tabs {
+        position: sticky;
+        top: 60px; /* height of .responsive-nav */
+        z-index: 999;
+        background-color: #eee;
+        /* prevent overlap / jump */
+        margin-bottom: 15px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: top 0.3s ease;
+    }
+    header.nav-up ~ .page-content #blog .tabs {
+        top: 0vh;
+    }
+
+    /* ensure sticky works (important for this template) */
+    #blog .wrapper,
+    #blog .tabs-content {
+        overflow: visible !important;
+    }
+}

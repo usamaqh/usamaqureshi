@@ -359,4 +359,11 @@ span.circle100:after {
     }
 }
 
+@media (max-width: 767px) {
+    .reel-Video {
+        margin-top: 74px; /* mobile */
+        margin-bottom: -100px; /* mobile */
+    }
+}
+
 

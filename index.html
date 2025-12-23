@@ -32,7 +32,7 @@
 
 
     <div id="top">
-        <video id="myVideo" muted autoplay loop preload="metadata" poster="img/postervideo.jpg" style="
+        <video class="reel-Video" id="myVideo" muted autoplay loop preload="metadata" poster="img/postervideo.jpg" style="
         height: 100%;
         /* width: 100%; */
         background: black;
@@ -201,56 +201,6 @@
                         <div class="folded-corner">
                             <div class="text">
                                 <figure class="">
-                                    <img class="" src="img/designer.svg">
-                                </figure>
-                                <h3 class="item-title">Designer</h3>
-                                <p>
-                                    Design tools that I am skilled with
-                                </p>
-                                <div class="scrollbar" id="style-2">
-                                    <div class="force-overflow">
-                                        <ul class="pck-dlst">
-                                            <li>
-                                                <p>
-                                                    Adobe Photoshop
-                                                </p>
-
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    Adobe Illustrator
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    Adobe Premiere Pro
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    Adobe After Effects
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    Blender
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    Substance Painter
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="folded-corner">
-                            <div class="text">
-                                <figure class="">
                                     <img class="" src="img/frontend.svg">
                                 </figure>
                                 <h3 class="item-title"> Developer</h3>
@@ -356,6 +306,56 @@
                                             </li>
                                             <li>
                                                 <p>WebGL</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="folded-corner">
+                            <div class="text">
+                                <figure class="">
+                                    <img class="" src="img/designer.svg">
+                                </figure>
+                                <h3 class="item-title">Designer</h3>
+                                <p>
+                                    Design tools that I am skilled with
+                                </p>
+                                <div class="scrollbar" id="style-2">
+                                    <div class="force-overflow">
+                                        <ul class="pck-dlst">
+                                            <li>
+                                                <p>
+                                                    Adobe Photoshop
+                                                </p>
+
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Adobe Illustrator
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Adobe Premiere Pro
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Adobe After Effects
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Blender
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Substance Painter
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
@@ -843,9 +843,6 @@
                                 <!-- <button id="loadMoreBtn" class="loadMoreBtnC">Show More</button>-->
                             </div>
 
-
-
-
                             <div id="tab3">
                                 <div class="filter-bar">
                                     <label>
@@ -950,6 +947,7 @@
 
                                 <!-- <button id="loadMoreBtnTab3" class="loadMoreBtnC">Show More</button>-->
                             </div>
+
                             <div id="tab4">
                                 <div class="filter-bar">
                                     <label>
@@ -1028,6 +1026,7 @@
                                 <!--<button id="loadMoreBtnTab4" class="loadMoreBtnC">Show More</button>-->
 
                             </div>
+
                             <div id="tab5">
                                 <div class="filter-bar">
                                     <label>
@@ -1615,7 +1614,6 @@
                                 <!--<button id="loadMoreBtnTab5" class="loadMoreBtnC">Show More</button>-->
 
                             </div>
-
                         </section>
                     </div>
                 </div>
@@ -17256,7 +17254,6 @@
             }
         });
     </script>-->
-
     <!--<script>
         {
             const hiddenBlocks2 = document.querySelectorAll("#tab1 .project-show");
@@ -17484,6 +17481,32 @@
 
     </script>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const tabs = document.querySelectorAll('#blog .tabs a');
+            const blogSection = document.querySelector('#blog');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+
+                    // Navbar height on mobile
+                    const navbarHeight = window.innerWidth <= 767 ? 60 : 0;
+
+                    const yOffset = -navbarHeight;
+                    const y = blogSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                    window.scrollTo({
+                        top: y,
+                        behavior: 'smooth'
+                    });
+
+                });
+            });
+
+        });
+    </script>
+
+    <script>
         $('.modal').on('shown.bs.modal', function () {
             $(this).find('[data-src]').each(function () {
                 const src = $(this).attr('data-src');
@@ -17498,6 +17521,12 @@
             $(this).find('iframe, video').each(function () {
                 $(this).attr('src', '');
             });
+        });
+    </script>
+
+    <script>
+        $('.navbar-collapse a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
         });
     </script>
 
